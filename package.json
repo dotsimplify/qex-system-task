@@ -1,7 +1,7 @@
 {
   "name": "qex-frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Qex systems test task",
   "main": "index.js",
   "dependencies": {
     "aos": "^2.3.4",
@@ -23,7 +23,10 @@
     "build": "next build",
     "start": "next start"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Nextjs",
+    "Tailwind CSS"
+  ],
+  "author": "Subhash Kumar",
   "license": "ISC"
 }
