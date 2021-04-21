@@ -14,7 +14,6 @@ const Dashboard = (props) => {
     try {
       setError("");
       await logout();
-      console.log("log out successfully");
       router.push("/login");
     } catch (error) {
       setError("Error while logging out , Try again");
@@ -222,7 +221,6 @@ const Dashboard = (props) => {
                 </header>
                 <div className="overflow-auto h-screen pb-24 pt-2 pr-2 pl-2 md:pt-0 md:pr-0 md:pl-0">
                   <div className="flex flex-col flex-wrap sm:flex-row ">
-                    {console.log(props.data.news.articles)}
                     {props.data.news.articles.map((news) => (
                       <div key={news.url} className="w-full sm:w-1/2 xl:w-1/3">
                         <div className="m-2">
