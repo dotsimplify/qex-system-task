@@ -3,7 +3,6 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useAuth } from "../context/AuthContext";
-import Footer from "../components/Footer";
 import { useRouter } from "next/router";
 const Login = () => {
   const emailRef = useRef();
@@ -107,7 +106,6 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
