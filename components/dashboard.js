@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useAuth } from "../context/AuthContext";
-import DashNav from "../components/DashNav";
+import DashNav from "./DashNav";
 import Modal from "react-modal";
-import Verification from "../components/verification";
+import Verification from "./verification";
 const Dashboard = (props) => {
   const { logout, currentUser } = useAuth();
   const [error, setError] = useState("");
@@ -19,8 +19,10 @@ const Dashboard = (props) => {
       setError("Error while logging out , Try again");
     }
   };
+  Modal.setAppElement("#__next");
   return (
     <>
+      {console.log(process.env.NEXT_PUBLIC_FIREBASE_API_KEY)}
       {currentUser ? (
         <>
           <DashNav />
