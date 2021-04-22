@@ -5,8 +5,13 @@ import fetch from "isomorphic-fetch";
 const Page = (props) => {
   return (
     <>
+      {console.log(props.news.status)}
       <AuthProvider>
-        <Dashboard data={props} />
+        {props.news.status == "ok" ? (
+          <Dashboard data={props} />
+        ) : (
+          <div>Произошла ошибка. Обновите страницу.</div>
+        )}
       </AuthProvider>
     </>
   );
