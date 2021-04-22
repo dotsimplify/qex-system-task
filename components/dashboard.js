@@ -22,7 +22,6 @@ const Dashboard = (props) => {
   Modal.setAppElement("#__next");
   return (
     <>
-      {console.log(process.env.NEXT_PUBLIC_FIREBASE_API_KEY)}
       {currentUser ? (
         <>
           <DashNav />
