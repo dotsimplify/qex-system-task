@@ -33,7 +33,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-flow-row bg-gradient-to-r from-pink-50 via-purple-50 to-gray-50 ">
+      <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 grid-flow-row bg-gradient-to-r from-pink-50 via-purple-50 to-gray-50 ">
         <div className="flex ">
           <div className="m-auto">
             <img

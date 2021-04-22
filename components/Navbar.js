@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="relative bg-gradient-to-r from-pink-200 via-purple-200 to-gray-200">
-      <div className="max-w-7xl mx-auhref px-4 sm:px-6">
+    <div className="relative w-full bg-gradient-to-r from-pink-200 via-purple-200 to-gray-200">
+      <div className="mx-auhref px-4 w-full sm:px-6">
         <div className="flex justify-between items-center  py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="no-underline hover:no-underline">
@@ -13,8 +13,7 @@ const Navbar = () => {
               </a>
             </Link>
           </div>
-          <div className="-mr-2 -my-2 md:hidden"></div>
-          <nav className=" md:flex space-x-10">
+          <nav className="hidden md:flex space-x-10">
             <Link href="/">
               <a>
                 <span className="lg:text-xl text-base font-semibold hover:text-blue-900">
